@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autolayout_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-fC-SRx">
+                                <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfd-Ca-7CA" userLabel="shadowBox">
+                                <rect key="frame" x="0.0" y="542.5" width="1080" height="267.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City in Japan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSD-A0-ScK">
+                                        <rect key="frame" x="20" y="20" width="1040" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is such a beautiful place!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRT-Zf-q8x">
+                                        <rect key="frame" x="20" y="72" width="1040" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.79704005281690138" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="CSD-A0-ScK" firstAttribute="leading" secondItem="gfd-Ca-7CA" secondAttribute="leading" constant="20" id="0ZS-bV-XyG"/>
+                                    <constraint firstItem="QRT-Zf-q8x" firstAttribute="leading" secondItem="gfd-Ca-7CA" secondAttribute="leading" constant="20" id="2nX-yX-R9C"/>
+                                    <constraint firstItem="QRT-Zf-q8x" firstAttribute="top" secondItem="CSD-A0-ScK" secondAttribute="bottom" constant="10" id="4zX-mL-ISN"/>
+                                    <constraint firstAttribute="trailing" secondItem="CSD-A0-ScK" secondAttribute="trailing" constant="20" id="86a-87-izg"/>
+                                    <constraint firstItem="CSD-A0-ScK" firstAttribute="top" secondItem="gfd-Ca-7CA" secondAttribute="top" constant="20" id="JAB-8p-V9g"/>
+                                    <constraint firstAttribute="trailing" secondItem="QRT-Zf-q8x" secondAttribute="trailing" constant="20" id="NkF-Kg-V9k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gfd-Ca-7CA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.33" id="8gS-8H-HbG"/>
+                            <constraint firstAttribute="bottom" secondItem="gfd-Ca-7CA" secondAttribute="bottom" id="Ghb-sw-WON"/>
+                            <constraint firstItem="Fgh-fC-SRx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tvi-bq-Eje"/>
+                            <constraint firstAttribute="trailing" secondItem="Fgh-fC-SRx" secondAttribute="trailing" id="UhC-yY-4nU"/>
+                            <constraint firstItem="Fgh-fC-SRx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X68-iF-yjO"/>
+                            <constraint firstItem="gfd-Ca-7CA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f2q-Pb-W16"/>
+                            <constraint firstAttribute="trailing" secondItem="gfd-Ca-7CA" secondAttribute="trailing" id="qd3-cP-Wpu"/>
+                            <constraint firstAttribute="bottom" secondItem="Fgh-fC-SRx" secondAttribute="bottom" id="vxC-AG-e81"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="landscape" width="2880" height="1800"/>
+    </resources>
+</document>
