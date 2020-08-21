@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-To-6hz">
+                                <rect key="frame" x="87" y="386.5" width="240" height="123.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="BZt-r5-Is1"/>
+                                    <constraint firstAttribute="width" constant="240" id="S36-PO-r0m"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TIM-To-6hz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DZR-xc-eqv"/>
+                            <constraint firstItem="TIM-To-6hz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lzQ-Le-bFw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="TIM-To-6hz" id="8o8-8S-vL5"/>
+                        <segue destination="cVq-eS-dM1" kind="show" identifier="first" id="Ngb-nP-8P3"/>
+                        <segue destination="OSd-L2-d2b" kind="show" identifier="picker" id="QEH-GQ-QhZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+        <!--Custom Picker View Controller-->
+        <scene sceneID="TJG-tT-sMz">
+            <objects>
+                <viewController id="OSd-L2-d2b" customClass="CustomPickerViewController" customModule="GestureRecognizing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ma0-Gl-VhE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1km-fy-CHD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ap8-gb-cB2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBI-n6-vEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="897"/>
+        </scene>
+        <!--Alert Picker View Controller-->
+        <scene sceneID="DTS-lE-eKz">
+            <objects>
+                <viewController id="cVq-eS-dM1" customClass="Alert_PickerViewController" customModule="GestureRecognizing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EtQ-Yi-lxO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lav-HE-nTP">
+                                <rect key="frame" x="184" y="406" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="cVq-eS-dM1" eventType="touchUpInside" id="gTi-jj-mHP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcx-xs-IL7">
+                                <rect key="frame" x="186" y="247" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3d1-R0-k8Q">
+                                <rect key="frame" x="0.0" y="541" width="414" height="216"/>
+                                <connections>
+                                    <action selector="datePicked:" destination="cVq-eS-dM1" eventType="valueChanged" id="ATM-JP-ptc"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PIj-m3-N3U">
+                                <rect key="frame" x="154" y="98" width="76" height="30"/>
+                                <state key="normal" title="PickerView"/>
+                                <connections>
+                                    <action selector="pickerButtonPressed:" destination="cVq-eS-dM1" eventType="touchUpInside" id="l23-pr-ALD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3d1-R0-k8Q" firstAttribute="leading" secondItem="cYD-wZ-e0j" secondAttribute="leading" id="3hs-zP-z5h"/>
+                            <constraint firstItem="PIj-m3-N3U" firstAttribute="top" secondItem="cYD-wZ-e0j" secondAttribute="top" constant="98" id="7z2-8n-2vg"/>
+                            <constraint firstItem="3d1-R0-k8Q" firstAttribute="top" secondItem="Lav-HE-nTP" secondAttribute="bottom" constant="105" id="Nhl-y0-Syv"/>
+                            <constraint firstItem="Lav-HE-nTP" firstAttribute="centerX" secondItem="EtQ-Yi-lxO" secondAttribute="centerX" id="OBk-08-n0D"/>
+                            <constraint firstItem="wcx-xs-IL7" firstAttribute="top" secondItem="PIj-m3-N3U" secondAttribute="bottom" constant="119" id="b8S-aO-Vir"/>
+                            <constraint firstItem="cYD-wZ-e0j" firstAttribute="trailing" secondItem="wcx-xs-IL7" secondAttribute="trailing" constant="186" id="bAn-Ck-2oQ"/>
+                            <constraint firstItem="cYD-wZ-e0j" firstAttribute="trailing" secondItem="PIj-m3-N3U" secondAttribute="trailing" constant="184" id="jqV-2T-JHY"/>
+                            <constraint firstItem="Lav-HE-nTP" firstAttribute="top" secondItem="wcx-xs-IL7" secondAttribute="bottom" constant="138" id="kup-bV-pzI"/>
+                            <constraint firstItem="Lav-HE-nTP" firstAttribute="centerY" secondItem="EtQ-Yi-lxO" secondAttribute="centerY" id="uUE-gf-d1I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cYD-wZ-e0j"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kKs-65-CvG"/>
+                    <connections>
+                        <outlet property="datepicker" destination="3d1-R0-k8Q" id="CDA-Nj-Xhn"/>
+                        <outlet property="pickerBtn" destination="PIj-m3-N3U" id="SO2-m3-4a8"/>
+                        <outlet property="textLabel" destination="wcx-xs-IL7" id="zCg-ur-7Qz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjI-AN-m3O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="151.33928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
