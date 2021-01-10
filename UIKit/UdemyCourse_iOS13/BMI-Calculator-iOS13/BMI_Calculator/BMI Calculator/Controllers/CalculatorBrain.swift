@@ -2,8 +2,8 @@
 //  CalculatorBrain.swift
 //  BMI Calculator
 //
-//  Created by Jonathan Phouminh on 6/9/20.
-//  Copyright © 2020 Angela Yu. All rights reserved.
+//  Created by Jonathan Phouminh on October 2nd 2020.
+//
 //
 
 import Foundation

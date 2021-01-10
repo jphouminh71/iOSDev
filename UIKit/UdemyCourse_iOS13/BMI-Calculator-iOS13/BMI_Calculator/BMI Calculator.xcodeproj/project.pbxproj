@@ -13,7 +13,6 @@
 		AD0B9F81230D61800065EFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0B9F7F230D61800065EFD9 /* Main.storyboard */; };
 		AD0B9F83230D61840065EFD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0B9F82230D61840065EFD9 /* Assets.xcassets */; };
 		AD0B9F86230D61840065EFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0B9F84230D61840065EFD9 /* LaunchScreen.storyboard */; };
-		AD64359A2312D0BC00E22B00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD6435992312D0BC00E22B00 /* README.md */; };
 		DD32C770249087D300CCD1F3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32C76F249087D300CCD1F3 /* ResultViewController.swift */; };
 		DD951F42249095EA0057CCDC /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD951F41249095EA0057CCDC /* CalculatorBrain.swift */; };
 		DDDA9BF72491197700896F6E /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA9BF62491197700896F6E /* BMI.swift */; };
@@ -28,7 +27,6 @@
 		AD0B9F82230D61840065EFD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD0B9F85230D61840065EFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD0B9F87230D61840065EFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD6435992312D0BC00E22B00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DD32C76F249087D300CCD1F3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		DD951F41249095EA0057CCDC /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorBrain.swift; path = "BMI Calculator/Controllers/CalculatorBrain.swift"; sourceTree = SOURCE_ROOT; };
 		DDDA9BF62491197700896F6E /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BMI.swift; path = "BMI Calculator/Controllers/BMI.swift"; sourceTree = SOURCE_ROOT; };
@@ -48,7 +46,6 @@
 		AD0B9F6D230D61800065EFD9 = {
 			isa = PBXGroup;
 			children = (
-				AD6435992312D0BC00E22B00 /* README.md */,
 				AD0B9F78230D61800065EFD9 /* BMI Calculator */,
 				AD0B9F77230D61800065EFD9 /* Products */,
 			);
@@ -163,7 +160,6 @@
 			files = (
 				AD0B9F86230D61840065EFD9 /* LaunchScreen.storyboard in Resources */,
 				AD0B9F83230D61840065EFD9 /* Assets.xcassets in Resources */,
-				AD64359A2312D0BC00E22B00 /* README.md in Resources */,
 				AD0B9F81230D61800065EFD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
