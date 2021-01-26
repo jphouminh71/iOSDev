@@ -1,3 +1,12 @@
 import UIKit
 
-var str = "Hello, playground"
+
+
+
+
+func main() {
+    print("in main")
+}
+
+
+main()
