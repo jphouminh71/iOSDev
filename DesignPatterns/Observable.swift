@@ -8,7 +8,6 @@ import UIKit
 
 /* 1. Inheritance in Swift */
 // Just going to create a basic set of animals
-
 class Animal {
     private
     
